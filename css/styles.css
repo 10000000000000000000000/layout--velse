@@ -1,0 +1,95 @@
+/* == Body styles == */
+/*
+  1. Tilføj forgrunds- og baggrundsfarve
+  2. Tilføj en transition på 1s
+*/
+body {
+  background: hsl(255 75% 95%);
+  color: hsl(255 75% 10%);
+  transition: 1s;
+}
+
+/*
+  1. Byt rundt på forgrunds- og baggrundsfarve på klassen .dark
+*/
+body.dark {
+  background: hsl(255 75% 10%);
+  color: hsl(255 75% 95%);
+}
+
+/* Header / Banner styles */
+/*
+  1. Få <h1> og <button> til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden
+  2. Tilføj forgrunds- og baggrundsfarve
+  3. Tilføj en transition på 1s
+*/
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  background: rgb(189, 157, 180);
+  color: rgb(26, 18, 51);
+  transition: 1s;
+}
+
+/*
+  1. Ændr evt. baggrundsfarve på banner, når body har klassen .dark
+  -> .dark .banner { ... }
+*/
+.banner.dark {
+  background: rgb(26, 18, 51);
+  color: rgb(189, 157, 180);
+}
+
+/* Article styles */
+/*
+  1. Lav et 2-kolonne grid vha. grid-template-columns
+  2. Tilføj evt. gap
+*/
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+figure {
+  grid-column: 0/1;
+  order: -1;
+}
+
+copy {
+  grid-column: 1/2;
+}
+
+/* Figure styles */
+/*
+  1. Ændr rækkefølgen, så <figure> står først vha. order
+  -> order: -1;
+*/
+
+/* Button styles */
+.mode {
+  background: hsl(255, 75%, 10%);
+  transition: 1s;
+}
+
+.mode:hover {
+  background: hsl(255, 75%, 25%);
+}
+
+/*
+  1. Ændr evt. baggrundsfarve, når body har klassen .dark
+  -> .dark .banner { ... }
+  2. Tilføj evt. en hover-effekt
+  -> .dark .mode:hover { ... }
+*/
+.dark .mode:hover {
+  background: hsl(255, 75%, 65%);
+}
+
+.dark .mode {
+  background: hsl(255, 75%, 60%);
+}

@@ -1,0 +1,68 @@
+/* Global styles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* == Body styles == */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header / Banner styles */
+.banner {
+  padding: 2rem;
+}
+
+/* Main styles */
+main {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  margin-block: 3rem;
+}
+
+section {
+  display: grid;
+  gap: 1rem;
+}
+
+.mode {
+  /* nulstil alle button styles */
+  all: initial;
+  font: inherit;
+  color: inherit;
+
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
